@@ -6,6 +6,8 @@ Yildirim, I., Hekmatyar, K., & Schneider, K. A. (under revision). Evaluating qua
 
 The raw nifti data for these analysis will be available at THIS LINK.
 
+This repository contains folders:
+
 	data: 	
 		The processed nifti files (aligned to the regular T1w of each S and masked for each LGN)
 		To be used by the MATLAB codes
