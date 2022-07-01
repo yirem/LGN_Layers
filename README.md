@@ -11,25 +11,21 @@ The raw nifti data for these analysis will be available at THIS LINK.
 		To be used by the MATLAB codes
 
 		fMRI:	
-			The eye-specific visual stimulation viewed in a MONOCULAR or DICHOPTIC fashion
+			The eye-specific visual stimulation viewed in a MONOCULAR or DICHOPTIC fashion (ses-06 and ses-07 in raw data respectively)
 			The GLM results (i.e., t stat) for Left Eye (LE) and Right Eye (RE) contrasted against each other for each condition
-			The LGN masks that were functionally adjusted based on Visual Hemifield Stimulation fMRI data
+			The LGN masks that were functionally adjusted based on Visual Hemifield Stimulation fMRI data (ses-05 in raw data)
 			The LGN masks that are showing voxels with significant ocular preference when the data from both tasks were combined in a higher-level GLM
 
 		qT1:	
-			Average T1 maps (Individual maps are too big for a github repository)
+			Average T1 maps
 			The LGN masks manually outlined from the upsampled average T1 map (see FSLcodes in qMRI folder)
-
-
-		T1:	
-			Regular T1-weighted image of the S that was used as the standard brain for the S
 
 	qMRI:
 		FSLcodes*: To process raw qMRI data on bash
 		i_MATLABcodes: 2-component Gaussian model and the fraction of M voxels calculated
 		ii_MATLABcodes: AIC/BIC compared for the 1- vs 2-component Gaussian models
+		qT1_subsamples.mat: data for iii_MATLABcodes, includes all the 16 individual T1 maps for each S's each LGN
 		iii_MATLABcodes: Random subsampling of the T1 maps to apply the same analysis in i_MATLABcodes
-		qT1_subsamples.mat: data for iii_MATLABcodes
 		iv_MATLABcodes: Graphs showing the proportion of M identified by the random subsamples 
 
 	fMRI:
