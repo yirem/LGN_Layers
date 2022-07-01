@@ -1,4 +1,4 @@
-# LGN_layers
+# LGN_Layers
 
 The processed data and codes for: 
 
