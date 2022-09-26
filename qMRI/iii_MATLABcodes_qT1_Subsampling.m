@@ -4,7 +4,7 @@ ROIs = ['lLGN';'rLGN'];
 
 n_map=16; %number of qT1 maps used in the average
 
-%data from each T1 maps is stored in this file, includes the struct ss
+%data from each T1 map is stored in this file, includes the struct ss
 load('qT1_subsamples.mat');
 
 for s = 1:3 %for each subject
@@ -76,6 +76,7 @@ for s = 1:3 %for each subject
                 ss.cutoff{s,r}(i+16*(n-1),1) = cutoff;
                 ss.labels{s,r}(i+16*(n-1),1)=n;
                 ss.prop{s,r}(i+16*(n-1),:) = prop;
+                ss.dataP{s,r}(:,i+16*(n-1)) = P; %P voxels are 1 and M voxels are 0
             end
         end
     end

@@ -79,9 +79,12 @@ for s = 1:3 %for each subject
         n_vox = length(data);
         q.vol_LGN(s,r) = vox*n_vox;        
         
-        %calculate the proportion of M to the whole LGN
+        %the classification of voxels
         P = data<cutoff;
-        M = data>=cutoff;       
+        M = data>=cutoff;
+        q.dataP{s,r} = data<cutoff; %P voxels are 1 and M voxels are 0
+        
+        %calculate the proportion of M to the whole LGN
         q.prop{s,r} = [(sum(M)/(sum(M)+sum(P))*100) (sum(P)/(sum(M)+sum(P))*100)];
         
         %compare M and P qT1 maps and calculate the average qT1 value for M and P 
