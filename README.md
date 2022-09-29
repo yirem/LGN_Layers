@@ -2,9 +2,9 @@
 
 The processed data and codes for: 
 
-Yildirim, I., Hekmatyar, K., & Schneider, K. A. (under revision). Evaluating quantitative and functional MRI as potential techniques to identify the layers in the human lateral geniculate nucleus. Invited resubmission to NeuroImage in July, 2022.
+Yildirim, I., Hekmatyar, K., & Schneider, K. A. (under revision). Evaluating quantitative and functional MRI as potential techniques to identify the subdivisions in the human lateral geniculate nucleus. Invited resubmission to NeuroImage in September, 2022.
 
-The raw nifti data for these analysis will be available at THIS LINK.
+The raw nifti data* for these analysis is available at https://openneuro.org/datasets/ds004187.
 
 This repository contains folders:
 
@@ -28,7 +28,8 @@ This repository contains folders:
 		ii_MATLABcodes: AIC/BIC compared for the 1- vs 2-component Gaussian models
 		qT1_subsamples.mat: data for iii_MATLABcodes, includes all the 16 individual T1 maps for each S's each LGN
 		iii_MATLABcodes: Random subsampling of the T1 maps to apply the same analysis in i_MATLABcodes
-		iv_MATLABcodes: Graphs showing the proportion of M identified by the random subsamples 
+		iv_MATLABcodes: Graphs showing the proportion of M identified by the random subsamples
+		v_MATLABcodes: Graphs showing the classification accuracy for voxels being M or P with the subsamples vs the entire sample 
 
 	fMRI:
 		i_MATLABcodes: The GLM results (i.e., t stat) for Left Eye (LE) vs Right Eye (RE) contrast were used to calculate the ocular preference of the LGN voxels and stored together
