@@ -90,6 +90,8 @@ for s = 1:3 %for each subject
         %compare M and P qT1 maps and calculate the average qT1 value for M and P 
         q.avg_qT1_M_P{s,r} = [mean(data(M)) mean(data(P))];
         q.sd_qT1_M_P{s,r} = [std(data(M)) std(data(P))];
+        q.sem_qT1_M_P{s,r} = [std(data(M))/sqrt(sum(data(M)) std(data(P))/sqrt(sum(data(P))];
+      
         [q.h(s,r),q.p(s,r),q.ci{s,r},q.stats{s,r}] = ttest2(M,P,'Vartype','unequal');        
         
         q.gm{s,r} = gm; %store the mixed Gaussian model
