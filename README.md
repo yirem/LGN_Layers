@@ -2,7 +2,9 @@
 
 The processed data and codes for: 
 
-Yildirim, I., Hekmatyar, K., & Schneider, K. A. (under revision). Evaluating quantitative and functional MRI as potential techniques to identify the subdivisions in the human lateral geniculate nucleus. Invited resubmission to NeuroImage in September, 2022.
+Yildirim, I., Hekmatyar, K., & Schneider, K. A. (2022). Evaluating quantitative and functional MRI as potential techniques to identify the subdivisions in the human lateral geniculate nucleus. BioRxiv. https://doi.org/10.1101/2022.11.16.516765
+
+Yildirim, I., Austin, A. J., & Schneider, K. A. (manuscript in prep). Segregating the eye-specific regions of the human lateral geniculate nucleus using non-negative matrix factorization.
 
 The raw nifti data* for these analysis is available at https://openneuro.org/datasets/ds004187.
 
@@ -34,6 +36,9 @@ This repository contains folders:
 	fMRI:
 		i_MATLABcodes: The GLM results (i.e., t stat) for Left Eye (LE) vs Right Eye (RE) contrast were used to calculate the ocular preference of the LGN voxels and stored together
 		ii_MATLABcodes: Correlations in the ocular preference values for monocular and dichoptic conditions (with scatterplots) and Chi-square comparison of variance for the classification of the voxels with the two tasks
+		j_MATLABcodes: The code for running orthonormal projective nonnegative matrix factorization (OPNMF) on the eye-specific fMRI data. The data is in the same folder in .mat version. The opnmf package at https://github.com/asotiras/brainparts needs to be downloaded.
+		jj_MATLABcodes: Correlations in the ocular preference values, calculated by the OPNMF, for monocular and dichoptic conditions and Chi-square comparison of variance for the classification of the voxels with the two tasks
+  
 
 
 *In the original qMRI analysis, the images were not defaced as in the raw data. This is due to many scans being aligned. Alignments were much better with the whole images that were not skull stripped. However, because of ethical procedures, we shared the defaced raw images.
